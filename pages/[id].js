@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import { Header } from './components/Header'
-import { Hero, HeroImage, HeroList, HeroListItem, HeroSection, HeroTitle } from './components/Hero'
-import { OSList } from './components/OSList'
-import { pages } from '../pages'
-import GooglePageContent from './components/GooglePageContent'
-import { Footer } from './components/Footer'
+import { Header } from '../components/Header'
+import { Hero, HeroImage, HeroList, HeroListItem, HeroSection, HeroTitle } from '../components/Hero'
+import { OSList } from '../components/OSList'
+import GooglePageContent from '../components/GooglePageContent'
+import { Footer } from '../components/Footer'
+import {pages} from '../pages'
 
 export default function Home({ subid }) {
 
