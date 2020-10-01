@@ -1,0 +1,6 @@
+export { default as Hero } from './Hero'
+export { default as HeroTitle } from './Title'
+export { default as HeroImage } from './Image'
+export { default as HeroSection } from './Section'
+export { default as HeroList } from './List'
+export { default as HeroListItem } from './ListItem'

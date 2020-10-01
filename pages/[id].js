@@ -2,11 +2,12 @@ import Head from 'next/head'
 import { Header } from './components/Header'
 import { Hero, HeroImage, HeroList, HeroListItem, HeroSection, HeroTitle } from './components/Hero'
 import { OSList } from './components/OSList'
+import { pages } from '../pages'
 import GooglePageContent from './components/GooglePageContent'
 import { Footer } from './components/Footer'
 
-export default function Home() {
-  const subid = "finlandindex"
+export default function Home({ subid }) {
+
   return (
     <>
       <Head>
@@ -33,4 +34,20 @@ export default function Home() {
       <Footer />
     </>
   )
+}
+
+export async function getStaticPaths() {
+  const paths = pages.map(page => ({
+    params: { id: page.id }
+  }))
+
+  return { paths, fallback: false }
+}
+
+export function getStaticProps({ params }) {
+
+  const currentPage = pages.find(page => page.id === params.id)
+
+  return { props: { subid: currentPage.subid } }
+
 }

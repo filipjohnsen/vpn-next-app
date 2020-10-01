@@ -1,0 +1,65 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  background-color: white;
+  height: 60px;
+  box-shadow: rgb(230, 230, 230) 2px 2px 4px 0px;
+}
+
+header nav {
+  height: 100%;
+  max-width: 93%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Open sans", sans-serif;
+}
+
+header nav ul li a:hover {
+  color: rgb(55, 117, 246);
+}
+
+.logo-container {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.logo-container img {
+  width: auto;
+  height: 80%;
+  margin-right: 10px;
+}
+
+.logo-container h2 {
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 1.75rem;
+}
+
+.logo-container h2 strong {
+  font-weight: 800;
+}

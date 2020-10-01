@@ -1,0 +1,15 @@
+footer {
+    background-color: var(--primary-color);
+    min-height: 500px;
+    padding: .5rem;
+}
+
+.inner-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: white;
+}
+
+.inner-footer h2 {
+    color: white;
+}

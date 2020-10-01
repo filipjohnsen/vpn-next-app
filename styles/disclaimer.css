@@ -1,0 +1,31 @@
+.disclaimer-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.disclaimer-container {
+  position: fixed;
+  z-index: 11;
+  background-color: white;
+  padding: 1rem;
+  width: 300px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  text-align: left;
+}
+
+.disclaimer-container ul {
+    padding: 0 1rem;
+}
+
+.disclaimer-container ul li{
+    text-align: left !important;
+    list-style: initial;
+}

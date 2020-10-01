@@ -4,9 +4,10 @@ import { Hero, HeroImage, HeroList, HeroListItem, HeroSection, HeroTitle } from 
 import { OSList } from './components/OSList'
 import GooglePageContent from './components/GooglePageContent'
 import { Footer } from './components/Footer'
+import { Leaderboard } from './components/Leaderboard'
 
 export default function Home() {
-  const subid = "finlandindex"
+  const subid = "finland404"
   return (
     <>
       <Head>
