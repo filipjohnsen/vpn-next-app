@@ -21,6 +21,11 @@
   text-align: left;
 }
 
+.disclaimer-container h3 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
 .disclaimer-container ul {
     padding: 0 1rem;
 }

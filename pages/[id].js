@@ -1,12 +1,29 @@
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
+import { Footer } from '../components/Footer'
+import GooglePageContent from '../components/GooglePageContent'
 import { Header } from '../components/Header'
 import { Hero, HeroImage, HeroList, HeroListItem, HeroSection, HeroTitle } from '../components/Hero'
 import { OSList } from '../components/OSList'
-import GooglePageContent from '../components/GooglePageContent'
-import { Footer } from '../components/Footer'
-import {pages} from '../pages'
+import { Popup } from '../components/Popup'
+import useMousePosition from '../hooks/useMousePosition'
+import { pages } from '../pages'
+
 
 export default function Home({ subid }) {
+
+  const [hasBeenShown, setHasBeenShown] = useState(false)
+  const [isShowing, setIsShowing] = useState(false)
+
+  const { y } = useMousePosition();
+
+  useEffect(() => {
+    if (y < 10 && !hasBeenShown) {
+      setHasBeenShown(true)
+      setIsShowing(true)
+    }
+  }, [y])
+
 
   return (
     <>
@@ -14,6 +31,7 @@ export default function Home({ subid }) {
         <title>Paras7VPN</title>
         <link rel="icon" href="https://paras7vpn.fi/assets/img/logo.png" />
       </Head>
+      {isShowing ? <Popup state={isShowing} handleClick={setIsShowing} subid={subid} /> : null}
       <Header />
       <Hero>
         <HeroSection>
@@ -24,13 +42,13 @@ export default function Home({ subid }) {
             <HeroListItem text="Ilmaiset koeajat & tyytyväisyystakuu" />
             <HeroListItem text="Todella nopeat nopeudet, täydellisiä HD-suoratoistoon" />
           </HeroList>
-          <OSList text="Saatavilla:"/>
+          <OSList text="Saatavilla:" />
         </HeroSection>
         <HeroSection>
           <HeroImage url="https://paras7vpn.fi/assets/img/finland.png" />
         </HeroSection>
       </Hero>
-      <GooglePageContent subid={subid}/>
+      <GooglePageContent subid={subid} />
       <Footer />
     </>
   )

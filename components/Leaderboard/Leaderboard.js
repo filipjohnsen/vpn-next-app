@@ -19,7 +19,7 @@ function Leaderboard({ subid }) {
                     <LeaderboardProsListItem text="Supernopea" />
                     <LeaderboardProsListItem text="Helppokäyttöinen" />
                     <LeaderboardProsListItem text="30 päivän rahat takaisin -takuu" />
-                    <p><i class="fas fa-user-friends"></i>72% käyttäjistämme valitsee ExpressVPN</p>
+                    <p><i className="fas fa-user-friends"></i>72% käyttäjistämme valitsee ExpressVPN</p>
                 </LeaderboardPros>
                 <LeaderboardScore score="9.8">
                     <LeaderboardStar/>

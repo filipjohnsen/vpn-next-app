@@ -1,22 +1,22 @@
 export default (req, res) => {
     const { query: { slug, subid } } = req
 
-    redirectToProvider(res, slug, subid)
+    res.send(redirectToProvider(slug, subid))
 }
 
-function redirectToProvider(res, slug, subid) {
-    switch(slug) {
+function redirectToProvider(slug, subid) {
+    switch (slug) {
         case "expressvpn":
-            res.send("https://expressvpn.com/" + subid)
-            break;
+            return "https://expressvpn.com/" + subid
         case "nordvpn":
-            res.send("https://nordvpn.com/" + subid)
-            break;
+            return "https://nordvpn.com/" + subid
+        case "ultravpn":
+            return "https://ultravpn.com/" + subid
         case "surfshark":
-            res.send("https://surfshark.com/" + subid)
-            break;
+            return "https://surfshark.com/" + subid
+        case "cyberghost":
+            return "https://cyberghost.com/"
         default:
-            res.redirect("/")
-            break;
+            return "/"
     }
 }

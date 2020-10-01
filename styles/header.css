@@ -16,6 +16,16 @@ header nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+header nav .mobile-menu {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  display: none;
 }
 
 header nav ul {
@@ -62,4 +72,33 @@ header nav ul li a:hover {
 
 .logo-container h2 strong {
   font-weight: 800;
+}
+
+@media screen and (max-width: 640px) {
+
+  header nav .mobile-menu {
+    display: block;
+  }
+
+  header nav ul {
+    position: fixed;
+    color: white;
+    width: 50vw;
+    min-width: 200px;
+    top: 0;
+    padding: 1rem 0 1rem 1rem;
+    background-color: #222222;
+    left: -100%;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: left .2s ease-in-out;
+  }
+
+  header nav ul.show {
+    left: 0;
+  }
+
+  header nav ul li {
+    margin-bottom: 1rem;
+  }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function HeaderMenu({ children }) {
+function HeaderMenu({ children, isMobileMenu }) {
     return (
-        <ul>
+        <ul className={isMobileMenu ? "show" : null}>
             {children}
         </ul>
     )

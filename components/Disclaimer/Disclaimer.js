@@ -5,7 +5,7 @@ function Disclaimer({ children }) {
     const [toggled, setToggled] = useState(false)
     return (
         <>
-            <i onClick={() => setToggled(!toggled)} class="fas fa-info-circle"></i>
+            <i onClick={() => setToggled(!toggled)} className="fas fa-info-circle"></i>
             {toggled ?
                 <DisclaimerContent content={children} handleClick={setToggled} state={toggled} /> : null
             }

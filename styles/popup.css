@@ -1,0 +1,106 @@
+.popup-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 12;
+}
+
+.popup-container {
+    width: 840px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #c9262d;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 470px;
+}
+
+.popup-header {
+    height: 75px;
+    background-color: #c9262d;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.popup-header i {
+    margin-right: 1rem;
+}
+
+.exit-popup {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.popup-content {
+    display: flex;
+    height: calc(470px - 75px - 8px);
+    background-color: white;
+}
+
+.popup-image-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.popup-info-section {
+    width: 60%;
+    color: var(--primary-color);
+    padding: 0 2rem;
+}
+
+.popup-info-section p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.popup-info-section h2 {
+    font-size: 1.8rem;
+}
+
+.popup-info-section i {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.popup-info-section button {
+    margin-top: 20px;
+    background-color: #c9262d;
+    width: 95%;
+    display: block;
+    border: none;
+    color: white;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 1.75rem;
+}
+
+.popup-info-section button:hover {
+    box-shadow: rgb(170, 170, 170) 0px 0px 4px 2px;
+}
+
+.popup-info-section span {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    .popup-overlay {
+        display: block;
+    }
+}

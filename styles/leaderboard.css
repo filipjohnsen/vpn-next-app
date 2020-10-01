@@ -184,7 +184,7 @@
       "text   text"
       "button button";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 60px .5fr;
+    grid-template-rows: 1fr 80px .5fr;
     padding: 2rem 0;
   }
 
@@ -192,6 +192,7 @@
     grid-area: score;
     grid-column: auto;
     justify-self: center;
+    padding-top: 0;
   }
 
   .leaderbord-item-container figure {
@@ -200,7 +201,7 @@
   }
 
   .leaderbord-item-container figure img {
-      width: 200px;
+      width: 150px;
   }
 
   .leaderbord-item-container .leaderboard-button-container {
