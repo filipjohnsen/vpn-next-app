@@ -1,5 +1,9 @@
+import { isMobile } from 'mobile-device-detect'
+
 export default (req, res) => {
-    const { query: { slug, subid } } = req
+    let { query: { slug, subid } } = req
+
+    isMobile ? subid = subid + "m" : subid = subid
 
     res.send(redirectToProvider(slug, subid))
 }
