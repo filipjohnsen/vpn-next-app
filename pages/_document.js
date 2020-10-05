@@ -13,6 +13,7 @@ class MyDocument extends Document {
                     <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap" rel="stylesheet" />
                     <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;&display=swap" rel="stylesheet" />
                     <script src="https://kit.fontawesome.com/100f05b54f.js" crossOrigin="anonymous"></script>
+                    <link rel="icon" href="https://paras7vpn.fi/assets/img/logo.png" />
                 </Head>
                 <body>
                     <Main />

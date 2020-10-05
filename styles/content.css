@@ -12,6 +12,15 @@
   background-color: white;
 }
 
+.content h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.content h3 strong {
+  font-weight: 600;
+}
+
 .content-image {
   display: block;
   float: right;

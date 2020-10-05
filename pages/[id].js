@@ -29,7 +29,6 @@ export default function Home({ subid }) {
     <>
       <Head>
         <title>Paras7VPN</title>
-        <link rel="icon" href="https://paras7vpn.fi/assets/img/logo.png" />
       </Head>
       {isShowing ? <Popup state={isShowing} handleClick={setIsShowing} subid={subid} /> : null}
       <Header />

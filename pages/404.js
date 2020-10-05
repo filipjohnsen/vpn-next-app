@@ -11,7 +11,6 @@ export default function Home() {
     <>
       <Head>
         <title>Paras7VPN</title>
-        <link rel="icon" href="https://paras7vpn.fi/assets/img/logo.png" />
       </Head>
       <Header />
       <Hero>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Content, ContentContainer, ContentImage, ContentTitle, Paragraph } from './Content'
 import { Leaderboard } from './Leaderboard'
 
-function GooglePageContent({  subid }) {
+function GooglePageContent({ subid }) {
   return (
     <ContentContainer>
       <Leaderboard subid={subid} />
